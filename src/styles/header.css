@@ -1,0 +1,168 @@
+:root {
+  --bg-color: #fff5e1; /* Cor de fundo com tom de massa de pizza */
+  --primary-color: #e74c3c; /* Vermelho vibrante para o molho de tomate */
+  --secondary-color: #f39c12; /* Amarelo/laranja representando o queijo derretido */
+  --highlight-color: #27ae60; /* Verde para representar manjericão fresco */
+  --text-color: #2c3e50; /* Cor do texto principal */
+  --secondary-text-color: #7f8c8d; /* Texto secundário */
+  --border-radius: 12px; /* Bordas arredondadas para suavidade */
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos gerais do cabeçalho */
+header {
+  position: relative;
+  background-color: var(--primary-color); /* Cor vermelha para o cabeçalho */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--highlight-color); /* Linha verde para dar destaque */
+}
+
+.logo-container {
+  flex-grow: 0;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  margin-left: 1rem;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4)); /* Adicionar sombra */
+  border-radius: var(--border-radius);
+  background-color: white; /* Fundo branco ao redor da logo */
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+/* Estilos para a lista de links de navegação */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius); /* Bordas arredondadas */
+}
+
+.nav-links li a:hover {
+  background-color: var(--secondary-color); /* Efeito de hover com cor de queijo */
+}
+
+/* Botões do cabeçalho */
+.cabeca-direiot {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  list-style: none;
+}
+
+.cabeca-direiot .btn-primary {
+  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.cabeca-direiot .btn-primary:hover {
+  background-color: var(--secondary-color); /* Muda para a cor do queijo no hover */
+}
+
+.cabeca-direiot .btn-secondary {
+  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.cabeca-direiot .btn-secondary:hover {
+  background-color: white;
+  color: var(--primary-color); /* Vermelho ao passar o mouse */
+  border: 2px solid var(--primary-color);
+}
+
+/* Menu móvel */
+.mobile-menu-content {
+  background-color: var(--bg-color);
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mobile-menu-content a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Estilos da seção principal (hero) */
+#hero {
+  background-image: url('path-to-pizza-image.jpg'); /* Imagem de fundo com pizza */
+  background-size: cover;
+  background-position: center;
+  padding-top: 6rem;
+  color: var(--text-color);
+}
+
+#hero .content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color); /* Destaque para o vermelho */
+}
+
+#hero p {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.botoes-centrais button {
+  background-color: var(--secondary-color); /* Amarelo de queijo */
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  color: white;
+}
+
+.botoes-centrais button:hover {
+  background-color: var(--highlight-color); /* Verde manjericão no hover */
+}
+
+/* Responsividade */
+@media (max-width: 1279px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-content {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #f7f2e7; /* Cor de fundo mais clara, semelhante a massa de pizza */
+    --primary-color: #e74c3c; /* Vermelho para representar molho de tomate */
+    --secondary-color: #f1c40f; /* Amarelo para representar queijo */
+    --text-color: #2c3e50; /* Cor do texto mais escura para contraste */
+    --secondary-text-color: #7f8c8d; /* Cor do texto secundário */
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.ola-text {
+    color: var(--primary-color);
+}
+
+.hero-text {
+    background: url('path-to-your-pizza-background-image.jpg') no-repeat center center/cover;
+    color: var(--text-color);
+    border-radius: 8px; /* Adiciona bordas arredondadas para um efeito mais suave */
+    padding: 1.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--fs-base);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}

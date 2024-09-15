@@ -1,0 +1,108 @@
+/* src/styles/solucoes.css */
+
+.solucoes {
+    padding: 4rem 1rem; /* Aumenta o padding da seção para mais destaque */
+    background-color: #fff8f0; /* Cor de fundo mais suave e convidativa */
+    margin-top: 10rem; /* Espaço acima da seção */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    margin-bottom: 1rem;
+    color: #d32f2f; /* Cor vibrante para o título */
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Aumenta o espaçamento entre os cards */
+    justify-content: center;
+    margin-top: 2rem; /* Espaço acima dos cards */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px; /* Bordas arredondadas suaves */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
+    overflow: hidden;
+    width: calc(33.333% - 2rem); /* Ajusta a largura dos cards */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    position: relative; /* Cria um contexto para o efeito hover */
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.3); /* Sobreposição colorida */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.card:hover::before {
+    opacity: 1; /* Torna a sobreposição visível no hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Borda inferior para separar a imagem do conteúdo */
+}
+
+.card-content {
+    padding: 1.5rem; /* Ajusta o padding para mais espaço interno */
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Tamanho maior para o título */
+    margin-bottom: 0.5rem;
+    color: #d32f2f; /* Cor vibrante para o título */
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 1.125rem; /* Ajusta o tamanho do texto da descrição */
+    color: #555; /* Cor cinza mais escura para a descrição */
+    margin-bottom: 0.75rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2rem); /* Ajusta a largura dos cards em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Ajusta a largura dos cards em telas muito pequenas */
+    }
+}

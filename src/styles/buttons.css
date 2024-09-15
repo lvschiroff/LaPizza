@@ -1,0 +1,60 @@
+/* Botão primário */
+.btn-primary {
+    width: auto; /* Ajusta a largura ao conteúdo */
+    background: var(--primary-color);
+    color: var(--light-text-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.6rem; /* Reduz a altura */
+    padding-inline: 1rem;  /* Reduz a largura do padding */
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: solid transparent 0.15rem;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Botão secundário base */
+.btn-secondary {
+    width: auto; /* Ajusta a largura ao conteúdo */
+    background: transparent;
+    color: 23a6f0;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.6rem; /* Reduz a altura */
+    padding-inline: 1rem; /* Reduz a largura do padding */
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Botões Centrais*/
+.botoes-centrais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Ajusta o espaçamento entre os botões */
+    margin-top: 1rem; /* Adiciona espaço acima dos botões, se necessário */
+}
+
+/* Atualização do estilo do botão veja-mais */
+.Cardapio .btn-primary {
+    background: transparent; /* Fundo transparente */
+    color: var(--primary-color); /* Texto azul */
+    border: solid var(--primary-color) 0.15rem; /* Bordas azuis */
+}
+
+.Cardapio .btn-primary:hover {
+    background: var(--primary-color); /* Fundo azul ao passar o mouse */
+    color: white;
+    border-color: var(--primary-color); /* Bordas permanecem azuis */
+}
