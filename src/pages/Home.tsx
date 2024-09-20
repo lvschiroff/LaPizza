@@ -1,8 +1,8 @@
 import Button from "../components/button"; 
 import "../styles/header.css"; 
-import "../styles/solucoes.css"; 
+import "../styles/Solucoes.css"; 
 import Logo from "../assets/Logo.svg"; 
-import Solucoes from "./Solucoes";
+import Solucoes from "../pages/Solucoes.tsx";
 
 export default function Home() {
     return (
