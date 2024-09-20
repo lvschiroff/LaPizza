@@ -1,5 +1,4 @@
 // src/pages/solucoes.tsx
-import React from 'react';
 import "../styles/solucoes.css"; // Certifique-se de criar este arquivo CSS
 
 const Solucoes = () => {

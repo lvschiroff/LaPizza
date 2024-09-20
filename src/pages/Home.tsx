@@ -2,7 +2,7 @@ import Button from "../components/button";
 import "../styles/header.css"; 
 import "../styles/solucoes.css"; 
 import Logo from "../assets/Logo.svg"; 
-import Solucoes from "../pages/Solucoes";
+import Solucoes from "./Solucoes";
 
 export default function Home() {
     return (
@@ -29,8 +29,7 @@ export default function Home() {
 
             {/* Seção principal da Home */}
             <section id="hero">
-                <div className="container content">
-                    <p className="ola-text desktop-only">Olá</p> 
+                <div className="container content"> 
                     <div className="hero-text"> 
                         <h1>Venha se deliciar com nossas pizzas artesanais, preparadas com ingredientes frescos e uma receita exclusiva que vai conquistar seu paladar.</h1> 
                         <p>Explore nosso cardápio e encontre a pizza perfeita para cada momento. Pronto para uma explosão de sabores?</p>
