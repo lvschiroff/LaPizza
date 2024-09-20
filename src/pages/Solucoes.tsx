@@ -1,5 +1,5 @@
 // src/pages/solucoes.tsx
-import "../styles/solucoes.css"; // Certifique-se de criar este arquivo CSS
+import "../styles/Solucoes.css"; // Certifique-se de criar este arquivo CSS
 
 const Solucoes = () => {
     return (
