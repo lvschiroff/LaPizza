@@ -1,11 +1,11 @@
 :root {
-  --bg-color: #fff5e1; /* Cor de fundo com tom de massa de pizza */
-  --primary-color: #e74c3c; /* Vermelho vibrante para o molho de tomate */
-  --secondary-color: #f39c12; /* Amarelo/laranja representando o queijo derretido */
-  --highlight-color: #27ae60; /* Verde para representar manjericão fresco */
-  --text-color: #2c3e50; /* Cor do texto principal */
-  --secondary-text-color: #7f8c8d; /* Texto secundário */
-  --border-radius: 12px; /* Bordas arredondadas para suavidade */
+  --bg-color: #fff5e1; 
+  --primary-color: #e74c3c; 
+  --secondary-color: #f39c12;
+  --highlight-color: #27ae60; 
+  --text-color: #2c3e50; 
+  --secondary-text-color: #7f8c8d; 
+  --border-radius: 12px; 
 }
 
 body {
@@ -15,14 +15,13 @@ body {
 
 /* Estilos gerais do cabeçalho */
 header {
-  position: relative;
-  background-color: var(--primary-color); /* Cor vermelha para o cabeçalho */
+  background-color: var(--primary-color);
   color: white;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 4px solid var(--highlight-color); /* Linha verde para dar destaque */
+  border-bottom: 4px solid var(--highlight-color);
 }
 
 .logo-container {
@@ -32,137 +31,135 @@ header {
 .logo {
   height: 80px;
   width: auto;
-  margin-left: 1rem;
-  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4)); /* Adicionar sombra */
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4));
   border-radius: var(--border-radius);
-  background-color: white; /* Fundo branco ao redor da logo */
+  background-color: white;
   padding: 0.5rem;
-  border-radius: var(--border-radius);
 }
 
-/* Estilos para a lista de links de navegação */
-.nav-links {
+/* Estilos para todos os tamanhos de tela */
+.nav-menu {
   display: flex;
-  gap: 1.5rem;
-  list-style: none;
+  align-items: center;
+  gap: 1rem; /* Espaço entre itens */
 }
 
-.nav-links li a {
+.nav-links, .button-container ul {
+  display: flex;
+  gap: 1rem; /* Ajusta o espaçamento entre os itens */
+  list-style: none; /* Remove marcadores da lista */
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
+.nav-links li, .button-container ul li {
+  margin: 0; /* Remove margem dos itens */
+  padding: 0; /* Remove padding dos itens */
+}
+
+.nav-links a, .button-container ul a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius); /* Bordas arredondadas */
+  display: block; /* Faz com que o link ocupe toda a área do item da lista */
+  text-align: center;
 }
 
-.nav-links li a:hover {
+.nav-links a:hover, .button-container ul a:hover {
   background-color: var(--secondary-color); /* Efeito de hover com cor de queijo */
 }
 
-/* Botões do cabeçalho */
-.cabeca-direiot {
-  display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
-  list-style: none;
-}
-
-.cabeca-direiot .btn-primary {
-  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
-  color: white;
+/* Estilos para botões */
+.btn-primary, .btn-secondary {
+  padding: 0.75rem 1.5rem; /* Ajustar padding conforme necessário */
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-.cabeca-direiot .btn-primary:hover {
-  background-color: var(--secondary-color); /* Muda para a cor do queijo no hover */
-}
-
-.cabeca-direiot .btn-secondary {
-  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.cabeca-direiot .btn-secondary:hover {
-  background-color: white;
-  color: var(--primary-color); /* Vermelho ao passar o mouse */
-  border: 2px solid var(--primary-color);
-}
-
-/* Menu móvel */
-.mobile-menu-content {
-  background-color: var(--bg-color);
-  padding-top: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-.mobile-menu-content a {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-/* Estilos da seção principal (hero) */
-#hero {
-  background-image: url('path-to-pizza-image.jpg'); /* Imagem de fundo com pizza */
-  background-size: cover;
-  background-position: center;
-  padding-top: 6rem;
-  color: var(--text-color);
-}
-
-#hero .content {
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
-  padding: 2rem;
-  border-radius: var(--border-radius);
-}
-
-#hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color); /* Destaque para o vermelho */
-}
-
-#hero p {
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
-
-.botoes-centrais button {
-  background-color: var(--secondary-color); /* Amarelo de queijo */
-  border: none;
-  padding: 1rem 2rem;
   border-radius: var(--border-radius);
   font-size: 1rem;
+  text-align: center;
+  width: 100%; /* Garante que o botão ocupe toda a largura do container */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+}
+
+.btn-primary {
+  background: var(--highlight-color);
   color: white;
 }
 
-.botoes-centrais button:hover {
-  background-color: var(--highlight-color); /* Verde manjericão no hover */
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-/* Responsividade */
-@media (max-width: 1279px) {
-  .nav-links {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-color);
 }
 
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Estilos para desktop */
 @media (min-width: 1280px) {
   .mobile-menu {
-    display: none;
+    display: none; /* Oculta o menu móvel em telas grandes */
   }
 
-  .mobile-menu-content {
-    display: none;
+  .nav-menu {
+    flex-direction: row; /* Alinha items na horizontal */
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: inline-block; /* Garantir que os links fiquem na mesma linha */
+  }
+
+  .button-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+  }
+}
+
+/* Estilos para mobile */
+@media (max-width: 1279px) {
+  header {
+    padding: 2rem; /* Aumenta o padding do cabeçalho para maior altura */
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+  }
+
+  .nav-menu {
+    flex-direction: column; /* Alinha itens na vertical */
+    width: 100%; /* Garante que o menu ocupe toda a largura do container */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* Alinha links verticalmente */
+    width: 100%; /* Faz com que os links ocupem toda a largura do menu */
+  }
+
+  .nav-links a {
+    padding: 1rem; /* Aumenta o padding dos links para mobile */
+    text-align: center;
+    width: 100%; /* Faz com que os links ocupem toda a largura do container */
+  }
+
+  .button-container {
+    margin-top: 2rem; /* Espaço acima dos botões em mobile */
+  }
+
+  .button-container ul {
+    display: flex;
+    flex-direction: column; /* Alinha botões verticalmente */
+    width: 100%; /* Faz com que os botões ocupem toda a largura do container */
+    gap: 1rem; /* Espaço entre os botões */
   }
 }

@@ -23,7 +23,7 @@
 .btn-secondary {
     width: auto; /* Ajusta a largura ao conteúdo */
     background: transparent;
-    color: 23a6f0;
+    color: #23a6f0;
     font-weight: var(--fw-bold);
     font-size: var(--fs-sm);
     padding-block: 0.6rem; /* Reduz a altura */

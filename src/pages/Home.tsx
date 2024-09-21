@@ -8,24 +8,28 @@ export default function Home() {
     return (
         <>
             <header>
-                <div className="logo-container">
-                    <img src={Logo} alt="Logo" className="logo" />
-                </div>
-                <ul className="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#promocoes">Promoções</a></li> {/* Link alterado de Soluções para Promoções */}
-                    <li><a href="#">Depoimento</a></li>
-                    <li><a href="#">Preço</a></li> 
-                    <li><a href="#">Contato</a></li>
-                </ul>
+  <div className="logo-container">
+    <img src={Logo} alt="Logo" className="logo" />
+  </div>
+  
+  <nav className="nav-menu">
+    <ul className="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#promocoes">Promoções</a></li>
+      <li><a href="#">Depoimento</a></li>
+      <li><a href="#">Preço</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
 
-                <div> {/* Container para os botões de Login e Cadastro */}
-                    <ul className="cabeca-direiot">
-                        <li><a href="#" className="btn-secondary">Login</a></li> 
-                        <li><a href="#" className="btn-primary">Cadastre-se</a></li>
-                    </ul>
-                </div>
-            </header>
+    <div className="button-container"> {/* Container para os botões de Login e Cadastro */}
+      <ul className="cabeca-direiot">
+        <li><a href="#" className="btn-secondary">Login</a></li> 
+        <li><a href="#" className="btn-primary">Cadastre-se</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
 
             {/* Seção principal da Home */}
             <section id="hero">
