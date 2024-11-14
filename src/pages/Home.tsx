@@ -1,35 +1,14 @@
-import Button from "../components/button"; 
-import "../styles/header.css"; 
-import "../styles/Solucoes.css"; 
-import Logo from "../assets/Logo.svg"; 
-import Solucoes from "../pages/Solucoes.tsx";
+import Header from "./header.tsx";
+import Button from "../components/button";
+
+import Promocoes from "./Promocoes.tsx";
+import AvaliacoesClientes from "../pages/AvaliacoesClientes.tsx";
+import PagamentoRetirada from "../pages/PagamentoRetirada.tsx";
 
 export default function Home() {
     return (
         <>
-            <header>
-  <div className="logo-container">
-    <img src={Logo} alt="Logo" className="logo" />
-  </div>
-  
-  <nav className="nav-menu">
-    <ul className="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#promocoes">Promoções</a></li>
-      <li><a href="#">Depoimento</a></li>
-      <li><a href="#">Preço</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-
-    <div className="button-container"> {/* Container para os botões de Login e Cadastro */}
-      <ul className="cabeca-direiot">
-        <li><a href="#" className="btn-secondary">Login</a></li> 
-        <li><a href="#" className="btn-primary">Cadastre-se</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
+            <Header />
 
             {/* Seção principal da Home */}
             <section id="hero">
@@ -38,7 +17,7 @@ export default function Home() {
                         <h1>Venha se deliciar com nossas pizzas artesanais, preparadas com ingredientes frescos e uma receita exclusiva que vai conquistar seu paladar.</h1> 
                         <p>Explore nosso cardápio e encontre a pizza perfeita para cada momento. Pronto para uma explosão de sabores?</p>
                     </div>
-                    <div className="botoes-centrais"> {/* Container para os botões centrais da seção */}
+                    <div className="botoes-centrais">
                         <span><Button text="Realizar Pedido" /></span>
                         <span className="Cardapio">
                             <Button text="Cardapio"/>
@@ -47,9 +26,19 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Seção Promoções (antes chamada Soluções) */}
+            {/* Seção Promoções */}
             <section id="promocoes"> 
-                <Solucoes />
+                <Promocoes />
+            </section>
+
+            {/* Seção de Avaliações dos Clientes */}
+            <section id="avaliacoes-clientes" className="avaliacoes-section">
+                <AvaliacoesClientes/>
+            </section>
+
+            {/* Seção de Formas de Pagamento e Retirada */}
+            <section id="pagamento-retirada" className="pagamento-retirada-section">
+            <PagamentoRetirada />
             </section>
         </>
     );

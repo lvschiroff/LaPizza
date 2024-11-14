@@ -8,6 +8,8 @@
 
 body {
     background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -18,23 +20,59 @@ a:hover {
     color: var(--secondary-color);
 }
 
-.hero-text {
-    background: url('path-to-your-pizza-background-image.jpg') no-repeat center center/cover;
+#hero {
+    background: url('path-to-your-pizza-background-image.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    height: 80vh; /* Ajusta a altura da seção hero para 80% da altura da tela */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     color: var(--text-color);
-    border-radius: 8px; /* Adiciona bordas arredondadas para um efeito mais suave */
-    padding: 1.5rem;
-}
-
-button {
-    background-color: var(--primary-color);
-    color: var(--light-gray);
-    border: none;
+    text-align: center;
     border-radius: 8px;
-    padding: 0.75rem 1.5rem;
-    font-size: var(--fs-base);
-    cursor: pointer;
+    padding: 0 2rem; /* Padding para garantir que o conteúdo não fique colado nas bordas */
 }
 
-button:hover {
-    background-color: var(--secondary-color);
+.hero-text {
+    max-width: 800px; /* Limita a largura do conteúdo hero */
+    padding: 1.5rem; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semitransparente para melhorar a legibilidade */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Deixa o texto mais pesado */
+    line-height: 1.3; /* Ajusta a altura da linha para melhorar a legibilidade */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra para destacar o texto */
+    color: var(--primary-color); /* Usa a cor primária para o texto */
+    text-transform: uppercase; /* Torna o texto maiúsculo para mais impacto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Tamanho do h1 */
+.hero-text h1 {
+    font-size: 2.3rem; /* Tamanho maior para o título */
+    margin-bottom: 3.5rem; /* Espaço abaixo do h1 */
+}
+
+/* Tamanho do p */
+.hero-text p {
+    font-size: 1.25rem; /* Tamanho menor para o parágrafo */
+    margin-top: 0; /* Remove o espaço extra acima do parágrafo */
+    margin-bottom: 1.5; /* Remove o espaço extra abaixo do parágrafo */
+}
+
+/* Estilos para telas pequenas (mobile) */
+@media (max-width: 767px) {
+    .hero-text {
+        font-size: 1rem; /* Diminui ainda mais o tamanho da fonte para mobile */
+        padding: 1rem; /* Reduz o padding */
+        max-width: 90%; /* Garante que o texto não fique muito largo */
+    }
+
+    /* Ajusta os tamanhos para mobile */
+    .hero-text h1 {
+        font-size: 1.3rem; /* Reduz o tamanho do h1 para dispositivos móveis */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Reduz o tamanho do p para dispositivos móveis */
+    }
 }

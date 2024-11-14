@@ -1,0 +1,91 @@
+.avaliacoes-section {
+  background-color: #f1f1f1;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.avaliacoes-section h2 {
+  font-size: 2.5em;
+  color: #e63946;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.avaliacoes-subtitulo {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.avaliacoes-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.avaliacao {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.avaliacao p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.avaliacao .estrelas {
+  color: #f5b301;
+  font-size: 1.5em;
+}
+
+.avaliacao span {
+  display: block;
+  font-size: 1em;
+  color: #777;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .avaliacoes-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .avaliacao {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .avaliacoes-section {
+      padding: 40px 20px; /* Reduz o padding nas telas menores */
+  }
+
+  .avaliacoes-section h2 {
+      font-size: 2em; /* Reduz o tamanho da fonte no título */
+  }
+
+  .avaliacoes-subtitulo {
+      font-size: 1em; /* Reduz o tamanho da fonte no subtítulo */
+  }
+
+  .avaliacao p {
+      font-size: 1em; /* Ajusta o tamanho do texto na avaliação */
+  }
+
+  .avaliacao .estrelas {
+      font-size: 1.2em; /* Ajusta o tamanho das estrelas */
+  }
+
+  .avaliacao span {
+      font-size: 0.9em; /* Ajusta o tamanho da fonte do nome do cliente */
+  }
+}

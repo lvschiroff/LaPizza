@@ -1,0 +1,98 @@
+.pagamento-retirada-section {
+  background-color: #fafafa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.pagamento-retirada-section h2 {
+  font-size: 2.8em;
+  color: #e63946;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pagamento-retirada-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  max-width: 100%; /* Ajusta para 100% para não ultrapassar a largura */
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap; /* Permite que as divs se movam para uma nova linha em telas pequenas */
+}
+
+.campo {
+  background-color: #ffffff;
+  border: 2px solid #e63946;
+  border-radius: 20px;
+  padding: 40px;
+  width: 30%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+}
+
+.campo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.campo h3 {
+  font-size: 1.8em;
+  color: #e63946;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.campo p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.campo .icon {
+  font-size: 3.5em;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+/* Responsividade para telas médias (1024px ou menos) */
+@media (max-width: 1024px) {
+  .pagamento-retirada-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .campo {
+      width: 100%; /* Cada campo ocupa 100% da largura disponível */
+      margin-bottom: 20px; /* Espaço entre os campos */
+  }
+}
+
+/* Responsividade para telas pequenas (768px ou menos) */
+@media (max-width: 768px) {
+  .pagamento-retirada-section {
+      padding: 40px 20px;
+  }
+
+  .pagamento-retirada-section h2 {
+      font-size: 2.2em;
+      letter-spacing: 1px;
+  }
+
+  .campo h3 {
+      font-size: 1.5em;
+  }
+
+  .campo p {
+      font-size: 1em;
+  }
+
+  .campo .icon {
+      font-size: 3em;
+  }
+}
