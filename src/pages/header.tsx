@@ -1,5 +1,3 @@
-// components/Header.tsx
-import React from "react";
 import Logo from "../assets/Logo.svg";
 import "../styles/header.css";
 
