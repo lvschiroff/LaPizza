@@ -14,9 +14,9 @@ export default function Footer() {
                 <div className="footer-section">
                     <h4>Links Úteis</h4>
                     <ul>
-                        <li><a href="#hero">Início</a></li>
-                        <li><a href="#promocoes">Promoções</a></li>
-                        <li><a href="#avaliacoes-clientes">Avaliações</a></li>
+                        <li><a href="#Home">Início</a></li>
+                        <li><a href="#Promo">Promoções</a></li>
+                        <li><a href="#Avaliacoes">Depoimentos</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>

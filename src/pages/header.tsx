@@ -14,11 +14,11 @@ export default function Header() {
                 {/* Menu de Navegação Desktop */}
                 <div className="desktop-menu">
                     <ul className="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#promocoes">Promoções</a></li>
-                        <li><a href="#avaliacoes">Depoimentos</a></li>
-                        <li><a href="#pricing">Preços</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#Promo">Promoções</a></li>
+                        <li><a href="#Avaliacoes">Depoimentos</a></li>
+                        <li><a href="#About">Sobre Nos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
 
@@ -34,10 +34,10 @@ export default function Header() {
                 <div className="mobile-menu">
                     <div className="mobile-menu-content">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#promocoes">Promoções</a></li>
-                            <li><a href="#testimonials">Depoimentos</a></li>
-                            <li><a href="#pricing">Preços</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#Promo">Promoções</a></li>
+                            <li><a href="#Avaliacoes">Depoimentos</a></li>
+                            <li><a href="#About">Sobre Nós</a></li>
                             <li><a href="#Contato">Contato</a></li>
                         </ul>
                         <ul className="cabeca-direiot">

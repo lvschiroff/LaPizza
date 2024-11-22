@@ -14,26 +14,34 @@ const Home = () => {
             {/* Adiciona o Header */}
             <Header />
       
+      <section id="Home">
       <section className="hero">
         <h1>Bem-vindo à Nossa Pizzaria</h1>
         <p>As melhores pizzas da cidade, feitas com amor e ingredientes frescos.</p>
         <button>Peça Agora</button>
       </section>
-
-      {/* Seção Sobre Nós */}
-      <section id="sobre">
-        <About />
       </section>
-      {/* Seção de Avaliações */}
-      <Avaliacoes />
 
       {/* Seção de Promoções */}
-      <Promo />
+      <section id="Promo">
+        <Promo />
+      </section>
+
+      {/* Seção de Avaliações */}
+      <section id="Avaliacoes">
+      <Avaliacoes />
+      </section>
+
+      {/* Seção Sobre Nós */}
+      <section id="About">
+        <About />
+      </section>
 
       {/* Seção de Contato */}
       <section id="Contato">
-      <Contato />
+        <Contato />
       </section>
+
       <Footer />
     </main>
   );
