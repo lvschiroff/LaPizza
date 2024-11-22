@@ -1,11 +1,11 @@
 import Header from "../pages/header";
 import Avaliacoes from "../pages/Avaliacoes";
-import Sobre from "../pages/Sobre";
-import Promocoes from "../pages/Promocoes";
+import Sobre from "./Sobre"
+import Promocoes from "./Promocoes";
 import Contato from "../pages/Contato";
 import Footer from "../pages/Footer";
 import "../styles/index.css";
- 
+
 
 const Home = () => {
   return (
