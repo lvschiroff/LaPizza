@@ -4,7 +4,8 @@ import Sobre from "../pages/Sobre";
 import Promocoes from "../pages/Promocoes";
 import Contato from "../pages/Contato";
 import Footer from "../pages/Footer";
-import "../styles/index.css"; 
+import "../styles/index.css";
+ 
 
 const Home = () => {
   return (
