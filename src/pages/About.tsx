@@ -34,6 +34,10 @@ const Sobre = () => {
     <section className="sobre">
       <div className="sobre-container">
         <h2>Sobre Nós</h2>
+        <p>
+          Nossa pizzaria nasceu do amor por oferecer a melhor experiência culinária.
+          Usamos ingredientes frescos e um toque especial em cada receita.
+        </p>
         <div className="carrossel">
           <div className="carrossel-content">
             <h3>{slides[currentSlide].title}</h3>
