@@ -18,13 +18,39 @@ a:hover {
     color: var(--secondary-color);
 }
 
-.hero-text {
-    background: url('path-to-your-pizza-background-image.jpg') no-repeat center center/cover;
-    color: var(--text-color);
-    border-radius: 8px; /* Adiciona bordas arredondadas para um efeito mais suave */
-    padding: 1.5rem;
-}
-
+.hero {
+    background-color: #fff; /* Cor de fundo alterada para branco */
+    color: var(--text-color); /* Cor do texto */
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color); /* Cor do título */
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: var(--secondary-text-color); /* Cor do parágrafo */
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: var(--primary-color);
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: var(--secondary-color);
+  }
+  
 button {
     background-color: var(--primary-color);
     color: var(--light-gray);

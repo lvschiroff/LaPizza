@@ -1,0 +1,72 @@
+/* Estilo Geral do Rodapé */
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    padding: 20px 15px; /* Espaçamento interno reduzido */
+    font-size: 0.8rem; /* Tamanho de texto menor */
+}
+
+/* Conteúdo Principal do Rodapé */
+.footer .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    justify-content: space-between; /* Espaçamento entre as seções */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+/* Seções Individuais do Rodapé */
+.footer .footer-section {
+    flex: 1;
+    min-width: 180px; /* Largura mínima reduzida */
+}
+
+/* Títulos das Seções */
+.footer h4 {
+    font-size: 1rem; /* Tamanho reduzido */
+    margin-bottom: 10px;
+    color: #f4a261; /* Destaque nos títulos */
+}
+
+/* Texto e Links */
+.footer p,
+.footer a {
+    color: #ddd; /* Cinza claro */
+    line-height: 1.4; /* Espaçamento menor entre linhas */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff; /* Texto branco no hover */
+    text-decoration: underline;
+}
+
+/* Redes Sociais */
+.footer .social-links {
+    display: flex;
+    flex-direction: column; /* Ícones em coluna */
+}
+
+.footer .social-links p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.footer .social-links a {
+    font-size: 1rem; /* Tamanho dos ícones reduzido */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+    color: #f4a261; /* Cor dos ícones */
+}
+
+.footer .social-links a:hover {
+    color: #fff; /* Cor dos ícones no hover */
+}
+
+/* Rodapé Inferior */
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #444; /* Linha separadora */
+    font-size: 0.7rem; /* Texto menor */
+    color: #aaa; /* Cinza claro */
+}

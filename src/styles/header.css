@@ -1,168 +1,159 @@
+/* Estilos Globais */
 :root {
-  --bg-color: #fff5e1; /* Cor de fundo com tom de massa de pizza */
-  --primary-color: #e74c3c; /* Vermelho vibrante para o molho de tomate */
-  --secondary-color: #f39c12; /* Amarelo/laranja representando o queijo derretido */
-  --highlight-color: #27ae60; /* Verde para representar manjericão fresco */
-  --text-color: #2c3e50; /* Cor do texto principal */
-  --secondary-text-color: #7f8c8d; /* Texto secundário */
-  --border-radius: 12px; /* Bordas arredondadas para suavidade */
+  --primary-color: #e63946; /* Cor principal baseada em .sobre h2 */
+  --secondary-color: #ff6f61; /* Cor para botões e links */
+  --background-color: #fff5e1; /* Cor de fundo baseada em .sobre */
+  --text-color: #333; /* Cor do texto principal */
+  --link-hover-color: #d9534f; /* Cor para o hover dos links */
 }
 
-body {
-  background-color: var(--bg-color);
-  font-family: 'Montserrat', sans-serif;
+/* Container do Header */
+.header-container {
+  background-color: var(--background-color);
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos gerais do cabeçalho */
-header {
-  position: relative;
-  background-color: var(--primary-color); /* Cor vermelha para o cabeçalho */
-  color: white;
-  padding: 1rem 2rem;
+/* Contêiner de Navegação */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img {
+  width: 220px;
+  height: auto;
+}
+
+/* Menu Desktop */
+.desktop-menu {
+  display: flex;
+}
+
+.desktop-menu .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-menu .nav-links li {
+  margin-right: 20px;
+}
+
+.desktop-menu .nav-links li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.desktop-menu .nav-links li a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Botões de Login e Cadastro */
+.header-buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 4px solid var(--highlight-color); /* Linha verde para dar destaque */
 }
 
-.logo-container {
-  flex-grow: 0;
-}
-
-.logo {
-  height: 80px;
-  width: auto;
-  margin-left: 1rem;
-  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4)); /* Adicionar sombra */
-  border-radius: var(--border-radius);
-  background-color: white; /* Fundo branco ao redor da logo */
-  padding: 0.5rem;
-  border-radius: var(--border-radius);
-}
-
-/* Estilos para a lista de links de navegação */
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius); /* Bordas arredondadas */
-}
-
-.nav-links li a:hover {
-  background-color: var(--secondary-color); /* Efeito de hover com cor de queijo */
-}
-
-/* Botões do cabeçalho */
 .cabeca-direiot {
   display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.cabeca-direiot .btn-primary {
-  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
+.cabeca-direiot li {
+  margin-left: 20px;
+}
+
+.cabeca-direiot li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cabeca-direiot li a.btn-primary {
+  background-color: var(--primary-color);
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.cabeca-direiot .btn-primary:hover {
-  background-color: var(--secondary-color); /* Muda para a cor do queijo no hover */
+.cabeca-direiot li a:hover {
+  color: var(--primary-color);
 }
 
-.cabeca-direiot .btn-secondary {
-  background-color: var(--highlight-color); /* Verde para o botão "Cadastre-se" */
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.cabeca-direiot li a.btn-primary:hover {
+  background-color: var(--secondary-color);
 }
 
-.cabeca-direiot .btn-secondary:hover {
-  background-color: white;
-  color: var(--primary-color); /* Vermelho ao passar o mouse */
-  border: 2px solid var(--primary-color);
+/* Menu Mobile */
+.mobile-menu {
+  display: none;
 }
 
-/* Menu móvel */
-.mobile-menu-content {
-  background-color: var(--bg-color);
-  padding-top: 2.5rem;
+.mobile-menu .mobile-menu-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.mobile-menu-content a {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+.mobile-menu .mobile-menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu .mobile-menu-content li {
+  margin-bottom: 15px;
+}
+
+.mobile-menu .mobile-menu-content a {
+  color: var(--text-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Estilos da seção principal (hero) */
-#hero {
-  background-image: url('path-to-pizza-image.jpg'); /* Imagem de fundo com pizza */
-  background-size: cover;
-  background-position: center;
-  padding-top: 6rem;
-  color: var(--text-color);
+.mobile-menu .mobile-menu-content a:hover {
+  color: var(--link-hover-color);
 }
 
-#hero .content {
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
-  padding: 2rem;
-  border-radius: var(--border-radius);
-}
+/* Responsividade: Mobile */
+@media (max-width: 768px) {
+  .desktop-menu {
+      display: none;
+  }
 
-#hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color); /* Destaque para o vermelho */
-}
-
-#hero p {
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
-
-.botoes-centrais button {
-  background-color: var(--secondary-color); /* Amarelo de queijo */
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: var(--border-radius);
-  font-size: 1rem;
-  color: white;
-}
-
-.botoes-centrais button:hover {
-  background-color: var(--highlight-color); /* Verde manjericão no hover */
-}
-
-/* Responsividade */
-@media (max-width: 1279px) {
-  .nav-links {
-    display: none;
+  .header-buttons {
+      display: none;
   }
 
   .mobile-menu {
-    display: block;
-  }
-}
-
-@media (min-width: 1280px) {
-  .mobile-menu {
-    display: none;
+      display: block;
   }
 
-  .mobile-menu-content {
-    display: none;
+  .mobile-menu .mobile-menu-content ul {
+      padding-left: 20px;
+  }
+
+  .mobile-menu .mobile-menu-content li {
+      margin-bottom: 10px;
+  }
+
+  .cabeca-direiot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .cabeca-direiot li {
+      margin-bottom: 15px;
   }
 }

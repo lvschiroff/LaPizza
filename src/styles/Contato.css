@@ -1,0 +1,48 @@
+/* Estilo Geral */
+.contato-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.contato-input,
+.contato-textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-textarea {
+    height: 100px; /* Altura do campo de texto */
+    resize: none; /* Impede redimensionamento */
+}
+
+.contato-input:focus,
+.contato-textarea:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+    outline: none;
+}
+
+.contato-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-button:hover {
+    background-color: #0056b3;
+}
