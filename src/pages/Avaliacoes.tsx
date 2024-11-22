@@ -1,6 +1,4 @@
-import React from "react";
-import "../styles/avaliacoes.css"; // Certifique-se de criar este arquivo
-
+import "../styles/avaliacoes.css"
 const Avaliacoes = () => {
   const avaliacoes = [
     {
