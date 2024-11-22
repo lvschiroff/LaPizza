@@ -1,10 +1,10 @@
 import Header from "../pages/header";
-import Avaliacoes from "./Avaliacoes";
-import Sobre from "./sobre";
-import Promocoes from "../pages/promocoes";
-import Contato from "./Contato";
-import Footer from "../components/footer"; // Importe o Footer
-import "../styles/index.css"; // Se tiver um arquivo CSS específico para a home
+import Avaliacoes from "../pages/Avaliacoes";
+import Sobre from "../pages/Sobre";
+import Promocoes from "../pages/Promocoes";
+import Contato from "../pages/Contato";
+import Footer from "../pages/Footer";
+import "../styles/index.css"; 
 
 const Home = () => {
   return (
