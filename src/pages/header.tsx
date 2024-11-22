@@ -16,7 +16,7 @@ export default function Header() {
                     <ul className="nav-links">
                         <li><a href="#">Home</a></li>
                         <li><a href="#promocoes">Promoções</a></li>
-                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#avaliacoes">Depoimentos</a></li>
                         <li><a href="#pricing">Preços</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
@@ -38,7 +38,7 @@ export default function Header() {
                             <li><a href="#promocoes">Promoções</a></li>
                             <li><a href="#testimonials">Depoimentos</a></li>
                             <li><a href="#pricing">Preços</a></li>
-                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#Contato">Contato</a></li>
                         </ul>
                         <ul className="cabeca-direiot">
                             <li><a href="#">Cadastre-se</a></li>

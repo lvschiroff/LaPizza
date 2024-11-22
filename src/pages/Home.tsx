@@ -1,7 +1,7 @@
 import Header from "../pages/header";
 import Avaliacoes from "../pages/Avaliacoes";
-import Sobre from "./Sobre"
-import Promocoes from "./Promocoes";
+import About from "../pages/About";
+import Promo from "../pages/Promo";
 import Contato from "../pages/Contato";
 import Footer from "../pages/Footer";
 import "../styles/index.css";
@@ -21,17 +21,19 @@ const Home = () => {
       </section>
 
       {/* Seção Sobre Nós */}
-      <Sobre />
-
+      <section id="sobre">
+        <About />
+      </section>
       {/* Seção de Avaliações */}
       <Avaliacoes />
 
       {/* Seção de Promoções */}
-      <Promocoes />
+      <Promo />
 
       {/* Seção de Contato */}
+      <section id="Contato">
       <Contato />
-
+      </section>
       <Footer />
     </main>
   );
