@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/sobre.css";
 
 const Sobre = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
       title: "Ingredientes Frescos",
@@ -21,41 +22,27 @@ const Sobre = () => {
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handleNext = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  const handlePrevious = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
-    );
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
   return (
     <section className="sobre">
-      {/* Texto da seção Sobre Nós */}
       <div className="sobre-container">
         <h2>Sobre Nós</h2>
-        <p>
-          Nossa pizzaria nasceu do amor por oferecer a melhor experiência culinária.
-          Usamos ingredientes frescos e um toque especial em cada receita.
-        </p>
-        <p>
-          Venha nos visitar e descubra porque somos a pizzaria favorita da cidade!
-        </p>
-      </div>
-
-      {/* Carrossel Adicionado */}
-      <div className="carrossel">
-        <div className="carrossel-content">
-          <h3>{slides[currentSlide].title}</h3>
-          <p>{slides[currentSlide].description}</p>
-        </div>
-        <div className="carrossel-controls">
-          <button onClick={handlePrevious}>&lt; Anterior</button>
-          <button onClick={handleNext}>Próximo &gt;</button>
+        <div className="carrossel">
+          <div className="carrossel-content">
+            <h3>{slides[currentSlide].title}</h3>
+            <p>{slides[currentSlide].description}</p>
+          </div>
+          <div className="carrossel-controls">
+            <button onClick={handlePrev} aria-label="Slide anterior">❮</button>
+            <button onClick={handleNext} aria-label="Próximo slide">❯</button>
+          </div>
         </div>
       </div>
     </section>
